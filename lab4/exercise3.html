@@ -1,0 +1,20 @@
+<html><title>Web Store</title>
+<script type="text/javascript" src="exercise3.js"></script>
+<link href="style.css" type="text/css" rel="stylesheet"/>
+<body>
+	<form name="form1" action="exercise3.php" onsubmit="return formVal()" method="post">
+		<p id="title">Welcome to Andre the Blacksmith's shop!<br><br></p>
+		Username:<input type="text" name="username" id="username" placeholder="name@domain.com" pattern="[A-Za-z]*@[A-Za-z]*.[a-z]*"><br>
+		Password:<input type="password" name="password" id="password"><br><br><br>
+		Titanite shards ($800 per):<input type="number" name="shards" id="shards" min="0" value="0"><br>
+		Number of wooden arrows ($3 per):<input type="number" name="arrows" id="arrows" min="0" value="0"><br>
+		Number of longswords ($1,000 per):<input type="number" name="swords" id="swords" min="0" value="0"><br><br><br>
+		Please choose a shipping preference<br>
+		<input type="radio" name="shipping" value="Free Seven Day" checked>Free Seven day<br>
+		<input type="radio" name="shipping" value="Overnight">$50.00 Overnight<br>
+		<input type="radio" name="shipping" value="Three Day">$5 Three day<br>
+		<input type="submit" name="Submit">
+		<input type="reset" name="Reset">
+	</form>
+</body>
+</html>
